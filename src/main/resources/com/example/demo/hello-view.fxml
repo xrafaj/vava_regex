@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+    <Label text="Word" />
+    <TextArea fx:id="text_regex" prefHeight="200.0" prefWidth="200.0" promptText="text" />
+    <Label text="Pattern" />
+    <TextField fx:id="pattern_regex" promptText="regex" />
+    <Label fx:id="welcomeText"/>
+    <Button text="Check regex" onAction="#onHelloButtonClick"/>
+</VBox>
